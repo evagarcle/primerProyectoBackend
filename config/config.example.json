@@ -4,7 +4,9 @@
     "password": "your password",
     "database": "your database name",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "jwt_secret":"tu secretito"
+
   },
   "test": {
     "username": "root",

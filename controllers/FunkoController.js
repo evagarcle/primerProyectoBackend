@@ -84,7 +84,19 @@ const FunkoController = {
       console.error(error)
       res.status(500).send(error)
     }
+  },
+  async orderByPriceDesc(req, res) {
+    try {
+      const orderedByPrice = await Funko.findAll({
+        order: [['price', 'DESC']], 
+      });
+      res.status(200).json(orderedByPrice); 
+    } catch (error) {
+      console.error(error);
+      res.status(500).send(error);
+    }
   }
+  
 }
 
 

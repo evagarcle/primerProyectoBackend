@@ -10,6 +10,7 @@ router.put('/id/:id', FunkoController.update)
 router.get('/id/:id', FunkoController.getById)
 router.get('/name/:name', FunkoController.getByName)
 router.get('/price/:price', FunkoController.getByPrice)
+router.get('/price', FunkoController.orderByPriceDesc)
 
 
 
