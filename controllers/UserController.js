@@ -2,7 +2,7 @@ const {User, Token, Order, Sequelize} = require ('../models/index')
 const bcrypt = require(("bcryptjs"))
 const jwt = require("jsonwebtoken")
 const {jwt_secret} = require("../config/config.json")["development"]
-const {ValidationErrorItemOriginp} = Sequelize
+const {Op} = Sequelize
 
 
 const UserController = {
@@ -57,7 +57,7 @@ const UserController = {
         where: {
           [Op.and]: [
             {UserId: req.user.id},
-            {token: req.headers.authoritation}
+            {token: req.headers.authorization}
           ]
         }
       })
