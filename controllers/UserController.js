@@ -66,6 +66,9 @@ const UserController = {
       console.error(error)
       res.status(500).send({msg:"Hubo un problema al tratar de desconectarse"})
     }
+  },
+  async getUsersOrdersFunkos(req,res){
+    
   }
 }
 
