@@ -1,4 +1,4 @@
-const {User, Token, Order, Sequelize} = require ('../models/index')
+const {User, Token, Order, Sequelize, Funko} = require ('../models/index')
 const bcrypt = require(("bcryptjs"))
 const jwt = require("jsonwebtoken")
 const {jwt_secret} = require("../config/config.json")["development"]
@@ -68,7 +68,24 @@ const UserController = {
     }
   },
   async getUsersOrdersFunkos(req,res){
-    
+    try {
+      const users = await User.findAll({
+        include: [
+          {
+            model: Order,
+            include: [
+              {
+                model: Funko
+              }
+            ]
+          }
+        ]
+      })
+      res.send(users)
+    } catch (error) {
+      console.error(error)
+      res.status(500).send(error)
+    }
   }
 }
 
