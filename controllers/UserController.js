@@ -16,6 +16,17 @@ const UserController = {
       res.status(500).send(error)
     }
   },
+  async getAll(req,res){
+    try {
+      const users = await User.findAll({
+        include:[{ model: Order, attributes:["number"] }] /**para que solo nos devuelva el name en el postman */
+      })
+      res.send({msg:"Todos los usuarios", users})
+    } catch (error) {
+      console.error(error)
+      res.status(500).send(error)
+    }
+  },
   async login(req,res){
     try {
      const user = await User.findOne({

@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
       Funko.belongsToMany(models.Category, {
         through:models.FunkoCategory
       })
+      Funko.belongsToMany(models.Order, {
+        through:models.FunkoOrder
+      })
     }
   }
   Funko.init({
