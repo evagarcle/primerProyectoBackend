@@ -47,3 +47,7 @@ Explorar tecnologías como Node.js, Express y MySQL/Sequelize me ha permitido co
 Además, trabajar en este proyecto me ha brindado la oportunidad de profundizar en conceptos como la seguridad de la información, las relaciones de base de datos y las mejores prácticas de desarrollo de API RESTful. 
 
 En resumen, un desafío que me ha permitido consolidar mi crecimiento como desarrolladora...
+
+DIAGRAMA DE RELACIONES ENTRE ENTIDADES:
+
+![DIAGRAMA BACKEND FUNKO ECOMMERCE](https://github.com/evagarcle/primerProyectoBackend/assets/162992210/0c017929-e2ca-4f21-b381-96b319c9853f)
