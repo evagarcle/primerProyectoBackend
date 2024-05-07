@@ -53,9 +53,11 @@ DIAGRAMA DE RELACIONES ENTRE ENTIDADES:
 ![DIAGRAMA BACKEND FUNKO ECOMMERCE](https://github.com/evagarcle/primerProyectoBackend/assets/162992210/0c017929-e2ca-4f21-b381-96b319c9853f)
 
 VISUAL STUDIO CODE:
+
 ![visual studio](https://github.com/evagarcle/primerProyectoBackend/assets/162992210/6e2c485f-c212-45d1-81ba-8ec5c1bee411)
 
 POSTMAN:
-![DIAGRAMA BACKEND FUNKO ECOMMERCE](https://github.com/evagarcle/primerProyectoBackend/assets/162992210/98667957-1285-4391-888f-2532ec6d7549)
+
+![postman](https://github.com/evagarcle/primerProyectoBackend/assets/162992210/55f49afa-30c9-4fe9-810a-57230892e9f8)
 
 
