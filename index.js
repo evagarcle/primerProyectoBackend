@@ -1,9 +1,10 @@
 const express = require("express")
 const app = express()
 const PORT = 3002
-
+const cors = require("cors")
 
 app.use(express.json())
+app.use(cors())
 
 app.use("/categories", require("./routes/categories")) /** PREFIJO */
 app.use("/funkos", require("./routes/funkos")) /** PREFIJO */
